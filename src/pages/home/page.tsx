@@ -6,10 +6,16 @@ import InfoSection from './components/InfoSection';
 import AccessSection from './components/AccessSection';
 import ContactSection from './components/ContactSection';
 import FooterSection from './components/FooterSection';
+import background from '@/assets/background.png';
+import tennai from '@/assets/tennai.jpg';
 
 export default function Home() {
   return (
-    <main className="w-full bg-background-50">
+    <div
+      className="min-h-screen bg-cover bg-center bg-no-repeat md:bg-fixed"
+      style={{ backgroundImage: `url(${background})` }}
+    >
+    <main className="w-full">
       <Header />
       <HeroSection />
       <ConceptSection />
@@ -19,5 +25,6 @@ export default function Home() {
       <ContactSection />
       <FooterSection />
     </main>
+    </div>
   );
 }

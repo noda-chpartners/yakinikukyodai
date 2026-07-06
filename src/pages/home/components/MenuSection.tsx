@@ -105,19 +105,16 @@ export default function MenuSection() {
               titleVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-6'
             }`}
           >
-            <span className="inline-block px-4 py-1 border border-accent-500/30 text-accent-500 text-xs font-label tracking-widest uppercase rounded-full">
-              Popular Menu
-            </span>
           </div>
           <h2
-            className={`mt-4 text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground-50 tracking-wide transition-all duration-700 delay-100 ease-out ${
+            className={`mt-4 text-3xl md:text-4xl lg:text-5xl font-yuji text-foreground-50 tracking-wide transition-all duration-700 delay-100 ease-out ${
               titleVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
             }`}
           >
-            人気メニュー
+            お品書き
           </h2>
           <p
-            className={`mt-3 text-foreground-400 text-base font-label transition-all duration-700 delay-200 ease-out ${
+            className={`mt-3 text-foreground-100 text-base font-label transition-all duration-700 delay-200 ease-out ${
               titleVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
             }`}
           >

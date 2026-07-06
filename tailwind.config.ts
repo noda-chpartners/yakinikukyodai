@@ -80,6 +80,7 @@ export default {
           display: ['var(--font-heading)'],
           serif: ['var(--font-heading)'],
           label: ['var(--font-label)'],
+          yuji: ['var(--font-yuji)'],
         },
       },
     },

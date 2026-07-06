@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
+import logo from '@/assets/logo.png';
 
 const navItems = [
   { label: 'こだわり', href: '#concept' },
@@ -60,7 +61,7 @@ export default function Header() {
             className="cursor-pointer flex-shrink-0"
           >
             <span className="text-xl md:text-2xl font-heading font-bold text-foreground-50 tracking-wide">
-              焼肉兄弟
+            <img src={logo} alt="焼肉兄弟" className="w-16 h-16" />          
             </span>
           </a>
 
@@ -74,7 +75,7 @@ export default function Header() {
                   e.preventDefault();
                   handleNavClick(item.href);
                 }}
-                className="whitespace-nowrap cursor-pointer px-4 py-2 text-foreground-50 text-sm font-label hover:text-foreground-50/80 transition-colors duration-200 rounded-md hover:bg-primary-500"
+                className="whitespace-nowrap cursor-pointer px-4 py-2 text-foreground-50 text-sm font-label hover:text-accent-500 transition-colors duration-200 rounded-md hover:text-accent-500"
               >
                 {item.label}
               </a>

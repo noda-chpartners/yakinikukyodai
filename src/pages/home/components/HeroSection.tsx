@@ -25,11 +25,11 @@ export default function HeroSection() {
           <div className="max-w-2xl w-full">
             <div
               ref={titleRef}
-              className={`mt-6 transition-all duration-800 delay-150 ease-out ${titleVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+              className={`-mt-28 lg:-ml-28 transition-all duration-800 delay-150 ease-out ${titleVisible ? ' translate-y-0' : 'opacity-0 translate-y-8'
                 }`}
             >
-              <p className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold text-foreground-50 mt-2 tracking-wide">
-                至福の味わいを、<br className="hidden sm:block" />日常に。
+              <p className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground-50 tracking-wide">
+                至福の味わいを、<br />日常に。
               </p>
             </div>
             <div
@@ -48,13 +48,13 @@ export default function HeroSection() {
             </div>
           </div>
 
-          <div className="flex-1 w-full lg:w-[40%] flex flex-col justify-center mt-8 lg:mt-0">
+          <div className="flex-1 w-full lg:w-[40%] flex flex-col justify-center mt-8 ">
 
           </div>
         </div>
 
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-          <i className="ri-arrow-down-line text-foreground-400 text-2xl w-6 h-6 flex items-center justify-center"></i>
+          <i className="ri-arrow-down-line text-foreground-50 text-2xl w-6 h-6 flex items-center justify-center"></i>
         </div>
       </div>
     </section>

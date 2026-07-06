@@ -52,17 +52,17 @@
   --secondary-900: 0.08 0.004 50;
   --secondary-950: 0.06 0.003 50;
 
-  --foreground-50: 0.98 0.002 95;
-  --foreground-100: 0.94 0.003 95;
-  --foreground-200: 0.88 0.004 95;
-  --foreground-300: 0.80 0.005 95;
-  --foreground-400: 0.72 0.005 95;
-  --foreground-500: 0.64 0.005 95;
-  --foreground-600: 0.55 0.005 95;
-  --foreground-700: 0.45 0.004 95;
-  --foreground-800: 0.35 0.004 95;
-  --foreground-900: 0.25 0.003 95;
-  --foreground-950: 0.15 0.002 95;
+  --foreground-50: 0.98 0.006 68;
+  --foreground-100: 0.94 0.008 65;
+  --foreground-200: 0.88 0.010 62;
+  --foreground-300: 0.80 0.011 60;
+  --foreground-400: 0.72 0.011 58;
+  --foreground-500: 0.64 0.010 56;
+  --foreground-600: 0.55 0.009 54;
+  --foreground-700: 0.45 0.025 48;
+  --foreground-800: 0.37 0.030 46;
+  --foreground-900: 0.29 0.034 44;
+  --foreground-950: 0.21 0.036 42;
 
   --font-heading: 'Noto Serif JP', serif;
   --font-body: 'Noto Sans JP', sans-serif;
@@ -72,12 +72,14 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
 }
 
 body {
   font-family: var(--font-body);
   background-color: oklch(var(--background-50));
   color: oklch(var(--foreground-50));
+  overflow-x: clip;
 }
 
 * {
