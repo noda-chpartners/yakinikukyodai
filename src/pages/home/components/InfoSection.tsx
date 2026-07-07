@@ -19,7 +19,7 @@ export default function InfoSection() {
       details: [
         { day: '総席数', time: '51席' },
         { day: '貸切', time: '20～50人' },
-        { day: 'たばこ', time: '全席禁煙・喫煙所あり' },
+        { day: 'たばこ', time: '全席禁煙,喫煙所あり' },
         { day: 'ベビーカー', time: '可' },
       ],
     },
@@ -27,9 +27,9 @@ export default function InfoSection() {
       title: 'お支払い方法',
       details: [
         { day: '現金', time: '可' },
-        { day: 'クレジットカード', time: 'VISA、Master、JCB、AMEX、Diners' },
-        { day: '電子マネー', time: '交通系、nanaco、WAON、iD' },
-        { day: 'QRコード決済', time: 'PayPay、d払い、au PAY' },
+        { day: 'クレジットカード', time: 'VISA,Master,JCB,AMEX,Diners' },
+        { day: '電子マネー', time: '交通系,nanaco,WAON,iD' },
+        { day: 'QRコード決済', time: 'PayPay,d払い,au PAY' },
         { day: 'チャージ料金', time: 'なし' },
       ],
     },
@@ -38,10 +38,10 @@ export default function InfoSection() {
   return (
     <section
       id="info"
-      className="relative w-full py-20 md:py-28 overflow-hidden bg-cover bg-center bg-no-repeat md:bg-fixed"
+      className="relative w-full py-20 md:py-28 overflow-x-clip bg-cover bg-center bg-no-repeat bg-fixed"
       style={{ backgroundImage: `url(${tennai})` }}
     >
-      <div className="absolute inset-0 from-background-900/30 to-background-900/50 bg-gradient-to-b  z-0" />
+      <div className="absolute inset-0 from-background-900/60 to-background-900/40 bg-gradient-to-b  z-0" />
       <div className="absolute top-1/2 right-0 w-96 h-96 bg-primary-500/3 rounded-full blur-3xl" />
       <div className="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-10">
         <div
@@ -60,7 +60,7 @@ export default function InfoSection() {
 
         </div>
 
-        <div ref={cardsRef} className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div ref={cardsRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {infoCards.map((card, index) => (
             <div
               key={card.title}
@@ -68,7 +68,7 @@ export default function InfoSection() {
                 }`}
               style={{ transitionDelay: cardsVisible ? `${index * 150}ms` : '0ms' }}
             >
-              <h3 className="text-accent-400 font-heading font-bold text-xl tracking-wide pb-4">
+              <h3 className="text-accent-400 font-yuji text-2xl tracking-wide pb-4">
                 {card.title}
               </h3>
 

@@ -20,7 +20,7 @@ export default function ContactSection() {
               ご予約
             </h2>
             <p className="text-foreground-900 text-base leading-relaxed mb-4">
-              お席のご予約、宴会のご相談など、<br />お気軽にお電話ください。
+              お席のご予約、宴会のご相談など、<br className="md:hidden" />お気軽にお電話ください。
             </p>
 
             <a
@@ -32,7 +32,7 @@ export default function ContactSection() {
             </a>
 
             <p className="text-foreground-900 text-base leading-relaxed mb-4">
-              hotpepperでのご予約や食べログからのご予約も可能です。
+              hotpepperでのご予約や食べログからの<br className="md:hidden" />ご予約も可能です。
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
@@ -44,7 +44,7 @@ export default function ContactSection() {
             </a>
             <a
               href="https://tabelog.com/tokyo/A1312/A131202/13257161/"
-              className="whitespace-nowrap cursor-pointer inline-flex items-center gap-3 px-8 py-4 bg-primary-500 text-foreground-50 font-label font-bold rounded-full hover:bg-primary-600 transition-all duration-300 text-lg"
+              className="whitespace-nowrap cursor-pointer inline-flex items-center gap-3 px-11 py-4 bg-primary-500 text-foreground-50 font-label font-bold rounded-full hover:bg-primary-600 transition-all duration-300 text-lg"
             >
               <i className="ri-external-link-line w-5 h-5 flex items-center justify-center"></i>
               食べログで予約

@@ -5,11 +5,8 @@ export default function FooterSection() {
     <footer className="relative w-full bg-background-50 pt-20 pb-8 overflow-hidden">
       <div className="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-10">
         
-        {/* コンテナを中央に配置（md:mx-auto）し、内包する要素を中央寄せ（md:items-center, md:text-center） */}
         <div className="flex flex-col gap-10 mb-16 max-w-xl md:mx-auto md:items-center text-left md:text-center">
           
-          {/* 1. ロゴ + 住所 */}
-          {/* sm:items-center で横並び時に縦の中央揃え */}
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
             <img
               src={logo}
@@ -17,7 +14,7 @@ export default function FooterSection() {
               className="w-24 h-24 flex-shrink-0 object-contain"
             />
             <div className="space-y-1">
-              <p className="text-foreground-50 font-heading font-bold text-lg tracking-wide">
+              <p className="text-foreground-50 font-heading font-bold text-lg text-start tracking-wide">
                 焼肉兄弟 亀戸店
               </p>
               <p className="text-foreground-200 text-sm font-label leading-relaxed">
@@ -26,7 +23,6 @@ export default function FooterSection() {
             </div>
           </div>
           
-          {/* 電話番号 */}
           <a
             href="tel:03-5875-2371"
             className="inline-flex items-center justify-start md:justify-center gap-1 text-foreground-50 font-label font-bold text-xl hover:text-accent-500 transition-colors -mb-3"
@@ -35,8 +31,6 @@ export default function FooterSection() {
             03-5875-2371
           </a>
           
-          {/* 営業時間 */}
-          {/* md:items-center で中身を中央揃えに */}
           <div className="space-y-3 -mb-3 flex flex-col items-start md:items-center">
             <div>
               <p className="text-foreground-400 text-xs font-label">平日</p>
