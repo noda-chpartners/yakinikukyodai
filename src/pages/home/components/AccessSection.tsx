@@ -18,7 +18,7 @@ export default function AccessSection() {
         <div className="relative bg-background-50/40 backdrop-blur-sm rounded-3xl overflow-hidden shadow-xl">
           <div className="flex flex-col md:flex-row items-stretch">
             
-            <div className={`hidden md:block md:w-[45%] lg:w-[50%] relative transition-all duration-800 ease-out ${
+            <div className={`hidden md:block md:w-[45%] lg:w-[50%] relative transition-all duration-[700ms] ease-out ${
               isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'
             }`}>
             
@@ -38,7 +38,7 @@ export default function AccessSection() {
             </div>
 
             {/* Right: Info */}
-            <div className={`w-full md:w-[55%] lg:w-[50%] p-6 md:p-12 lg:p-16 flex flex-col justify-center transition-all duration-800 delay-200 ease-out ${
+            <div className={`w-full md:w-[55%] lg:w-[50%] p-6 md:p-12 lg:p-16 flex flex-col justify-center transition-all duration-[700ms] delay-200 ease-out ${
               isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-y-8'
             }`}>
              
@@ -76,7 +76,7 @@ export default function AccessSection() {
                 href="https://maps.app.goo.gl/yEkyJsz3eEfo5zni6"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
-                className="whitespace-nowrap cursor-pointer self-start inline-flex items-center gap-2 px-6 py-3 bg-accent-500 text-background-900 font-label font-medium rounded-full hover:bg-accent-400 transition-colors duration-300 text-sm mt-2"
+                className="whitespace-nowrap cursor-pointer self-start inline-flex items-center gap-2 px-6 py-3 bg-accent-500 text-background-900 font-label font-medium rounded-full hover:bg-accent-400 transition-colors duration-[700ms] text-sm mt-2"
               >
                 <i className="ri-map-2-line w-4 h-4 flex items-center justify-center"></i>
                 Google Mapで見る
